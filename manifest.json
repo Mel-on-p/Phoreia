@@ -1,0 +1,11 @@
+{
+  "name": "Phoreia",
+  "short_name": "Phoreia",
+  "description": "Protège ton avenir professionnel face à l'IA",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#02050F",
+  "theme_color": "#02050F",
+  "orientation": "portrait",
+  "icons": []
+}

@@ -15,13 +15,13 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         model: 'claude-haiku-4-5-20251001',
-        max_tokens: 1200,
+        max_tokens: 1800,
         messages: [{ role: 'user', content: prompt }],
       }),
     });
     const data = await response.json();
     return res.status(200).json(data);
   } catch (error) {
-    return res.status(500).json({ error: 'API error', details: error.message });
+    return res.status(500).json({ error: error.message });
   }
 }
